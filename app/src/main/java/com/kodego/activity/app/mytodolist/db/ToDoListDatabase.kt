@@ -35,4 +35,9 @@ abstract class ToDoListDatabase: RoomDatabase() {
             ToDoListDatabase::class.java,
             "TodoListTable"
         )
+        private fun isTaskDone(context: Context) = Room.databaseBuilder(
+            context.applicationContext,
+            ToDoListDatabase::class.java,
+            "TodoListTable"
+        )
 }

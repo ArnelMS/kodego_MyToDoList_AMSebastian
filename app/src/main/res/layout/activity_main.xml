@@ -22,8 +22,8 @@
         android:id="@+id/textView"
         android:layout_width="217dp"
         android:layout_height="42dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="MY TO DO LIST"
         android:textAllCaps="true"
@@ -45,7 +45,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.129"
+        app:layout_constraintVertical_bias="0.285"
         app:srcCompat="@android:drawable/ic_menu_info_details"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -53,7 +53,7 @@
         android:id="@+id/etItem"
         android:layout_width="397dp"
         android:layout_height="57dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="#F7F7F8"
         android:ems="10"
         android:hint="Enter your to do's here"
@@ -64,44 +64,31 @@
         android:textColor="#575555"
         android:textColorHint="#595757"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/btnAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#011CC5"
         android:text="add"
         android:textColor="#FFFFFBFB"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toStartOf="@+id/btnReset"
-        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etItem"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btnRefresh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#011CC5"
-        android:text="REFRESH"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
-        app:layout_constraintEnd_toStartOf="@+id/btnReset"
-        app:layout_constraintStart_toEndOf="@+id/btnAdd"
-        app:layout_constraintTop_toBottomOf="@+id/etItem"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
         android:id="@+id/btnReset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="52dp"
         android:backgroundTint="#011CC5"
         android:text="reset"
         android:textColor="#FFFFFF"
@@ -120,5 +107,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etItem" />
+
+    <TextView
+        android:id="@+id/tvCurrentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Current Date"
+        android:textColor="#6C6969"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

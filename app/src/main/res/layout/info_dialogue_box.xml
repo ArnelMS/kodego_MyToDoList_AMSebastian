@@ -4,64 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="420dp"
     android:layout_height="300dp"
+    android:background="#B3B9DC"
     android:padding="10dp">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="1324dp"
-        android:layout_height="774dp"
-        app:srcCompat="@drawable/bg_todolist0"
-        tools:layout_editor_absoluteX="-441dp"
-        tools:layout_editor_absoluteY="-385dp" />
+        android:layout_width="415dp"
+        android:layout_height="274dp"
+        android:contentDescription="InfoDaialgBox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/infodialogbg" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="257dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="48dp"
-        android:text="Thank you for Using"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
+        android:layout_width="262dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/thank_you_for_using"
+        android:textAlignment="viewStart"
+        android:textColor="#004681"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="361dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="275dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="70dp"
         android:text="Created by: Arnel M. Sebastian"
-        android:textSize="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textAlignment="viewStart"
+        android:textColor="#004681"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="265dp"
+        android:layout_height="19dp"
+        android:text="For Comments and Suggestions"
+        android:textAlignment="viewStart"
+        android:textColor="#004681"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="274dp"
+        android:layout_height="22dp"
+        android:text="Email: Sebastian.ArnelM@Gmail.com"
+        android:textAlignment="viewStart"
+        android:textColor="#004681"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="309dp"
-        android:layout_height="43dp"
-        android:text="Mobile Application"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="263dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="56dp"
-        android:text="My To Do List App"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="68dp"
+        android:text="Mobile App"
+        android:textAlignment="viewStart"
+        android:textColor="#004681"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="181dp"
+        android:layout_height="90dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/todolistlogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

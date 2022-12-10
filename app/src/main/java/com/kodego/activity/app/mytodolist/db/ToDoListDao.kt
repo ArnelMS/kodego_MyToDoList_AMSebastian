@@ -22,5 +22,6 @@ interface ToDoListDao {
     @Query("DELETE FROM ToDoList")
     fun deleteAllToDoList()
 
-
+    @Query("UPDATE ToDoList SET isTaskDone = :isTaskDone WHERE itemNumber = :itemNumber")
+    fun taskIsDone(itemNumber: Int, isTaskDone: Boolean)
 }
